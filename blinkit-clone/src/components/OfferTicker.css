@@ -1,0 +1,29 @@
+.offer-ticker {
+  background: linear-gradient(135deg, #0c831f 0%, #1ea832 100%);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+}
+
+.ticker-track {
+  display: inline-flex;
+  gap: 60px;
+  animation: ticker-scroll 40s linear infinite;
+}
+
+.ticker-item {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  flex-shrink: 0;
+}
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.offer-ticker:hover .ticker-track {
+  animation-play-state: paused;
+}

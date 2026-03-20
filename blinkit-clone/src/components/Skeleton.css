@@ -1,0 +1,62 @@
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.skeleton-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #f0f0f0;
+}
+
+.skeleton-image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.skeleton-title {
+  height: 14px;
+  width: 80%;
+  margin-bottom: 8px;
+}
+
+.skeleton-subtitle {
+  height: 11px;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.skeleton-action {
+  height: 32px;
+  width: 60%;
+  margin-left: auto;
+  border-radius: 8px;
+}
+
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  gap: 16px;
+}
+
+/* Dark mode override */
+[data-theme="dark"] .skeleton {
+  background: linear-gradient(90deg, #2a2a2a 25%, #333 50%, #2a2a2a 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+[data-theme="dark"] .skeleton-card {
+  background: #1e1e1e;
+  border-color: #333;
+}

@@ -1,0 +1,17 @@
+/* App layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main, .main-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-bottom: 64px; /* space for mobile nav */
+  }
+}
+

@@ -1,0 +1,17 @@
+{
+  "name": "Blinkit Clone",
+  "short_name": "Blinkit",
+  "description": "Grocery delivery in 10 minutes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0c831f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
